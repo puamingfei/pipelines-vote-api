@@ -15,8 +15,8 @@ func setupRouter() *gin.Engine {
 
 	r.GET("/vote", func(c *gin.Context) {
 		payload := gin.H{}
-		voteA := 0
-		voteB := 0
+		voteA := 1
+		voteB := 1
 		for _, v := range inMemoryStore {
 			switch v {
 			case "a":
